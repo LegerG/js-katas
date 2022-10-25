@@ -12,6 +12,17 @@ Add you own tests.
 
 */
 
-// TODO add your code here
+// Use https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+function abbreviate(name) {
+  if (!name) {
+    return "";
+  }
+
+  return name
+    .split(" ")
+    .map((word) => word[0].toUpperCase())
+    .join(".");
+}
 
 module.exports = abbreviate;
