@@ -25,7 +25,7 @@ function countChar(string, char) {
 
   return string.split("").reduce((count, currentChar) => {
     return currentChar === char ? count + 1 : count;
-  });
+  }, 0);
 }
 
 module.exports = countChar;
