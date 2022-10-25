@@ -16,6 +16,16 @@ Add you own tests.
 
 */
 
-// TODO add your code here
+// Use https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+function countChar(string, char) {
+  if (!string || !char || char.length !== 1) {
+    return -1;
+  }
+
+  return string.split("").reduce((count, currentChar) => {
+    return currentChar === char ? count + 1 : count;
+  }, 0);
+}
 
 module.exports = countChar;

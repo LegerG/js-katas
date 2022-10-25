@@ -17,6 +17,12 @@ Add you own tests.
 
 */
 
-// TODO add your code here
+function isPalindrome(word) {
+  if (!word) {
+    return true;
+  }
+
+  return word.toLowerCase() === word.toLowerCase().split("").reverse().join("");
+}
 
 module.exports = isPalindrome;
